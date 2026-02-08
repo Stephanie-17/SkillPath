@@ -1,9 +1,10 @@
-import Image from "next/image";
+import Hero from "@/components/Landing/Hero";
+
 
 export default function Home() {
   return (
-    <div className="">
-      <h1>Welcome to skillpath</h1>
-    </div>
+    <main>
+     <Hero />
+    </main>
   );
 }
