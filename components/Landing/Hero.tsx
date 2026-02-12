@@ -2,7 +2,7 @@ import React from "react";
 import Search from "./Search";
 const Hero = () => {
 	return (
-    <section className="flex justify-center relative">
+    <section className="flex justify-center relative pb-27">
       	<section className="mt-10  p-5 flex flex-col items-center ">
           {/* Decorative elements */}
           <div
@@ -21,7 +21,7 @@ const Hero = () => {
       <div className=" border text-xs border-primary bg-primary/10 rounded-3xl px-7 py-1 mb-5">
         <p className="text-primary">★ Welcome to SkillPath ★</p>
       </div>
-			<div className="text-center mb-6 max-sm:w-90 sm:w-[70%]  md:pl-5">
+			<div className="text-center mb-10 max-sm:w-90 sm:w-[70%]   md:pl-5">
 				<h1 className=" font-extrabold text-4xl md:text-5xl lg:text-7xl mb-5 lg:mb-10">
 					Choose the <span className="text-primary">right skill</span>, not just the next course.
 				</h1>

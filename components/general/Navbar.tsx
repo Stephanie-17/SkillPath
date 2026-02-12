@@ -43,7 +43,7 @@ const Navbar = () => {
 			</div>
 
 			{/* Menu Bar */}
-			<div className="flex gap-4 mr-10 max-md:hidden pr-10">
+			<div className="flex gap-4  max-md:hidden ">
 				<Link
 					className='relative pb-2 after:content-[""] after:w-0 after:absolute after:bottom-0 after:left-0  after:h-1 after:bg-primary after:transition-all after:duration-500  cursor-pointer hover:after:w-full'
 					href={"/"}
