@@ -1,36 +1,158 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# SkillPath
 
-## Getting Started
+**Learning, without the guesswork.**
 
-First, run the development server:
+SkillPath is a decision-making and planning platform that helps people choose the right skills to learn, compare learning options, and track progress toward real outcomes — without overwhelm, hype, or wasted time.
+
+---
+
+## 🚀 What Is SkillPath?
+
+SkillPath is **not** an online course platform.
+
+Instead of hosting content, SkillPath focuses on **clarity**:
+
+* What skill should I learn?
+* Which learning option is best for me?
+* Am I actually making progress?
+
+It acts like a **map for skill-based learning**, helping users plan and follow a structured learning journey.
+
+---
+
+## 🎯 Problem SkillPath Solves
+
+Modern learners face:
+
+* Too many courses
+* Confusing marketing claims
+* No clear way to compare options
+* Poor visibility into progress
+
+Most platforms optimize for selling courses — SkillPath optimizes for **user outcomes**.
+
+---
+
+## 🧠 Core Concept
+
+SkillPath is built around four core layers:
+
+1. **Skills** – Curated, platform-controlled skills (e.g. Web Development, Data Analysis)
+2. **Courses** – Comparable learning options across platforms
+3. **Learning Paths** – User-defined plans built from skills
+4. **Progress Tracking** – Visibility into effort and completion
+
+Each layer exists to reduce decision fatigue and increase follow-through.
+
+---
+
+## 👥 Who It’s For
+
+* Students exploring career skills
+* Career switchers reskilling efficiently
+* Self-learners who want structure
+
+All users share one thing: limited time and a need for clarity.
+
+---
+
+## ✨ Key Features
+
+* 🔍 **Skill Explorer** – Browse curated skills with clear descriptions and outcomes
+* 📊 **Course Comparison** – Compare cost, duration, level, and format
+* 🧭 **Learning Paths** – Build structured plans tied to goals
+* 📈 **Progress Tracking** – Track completion and momentum over time
+* 🔐 **User Dashboard** – Personalized paths and progress
+
+---
+
+## 🛠️ Tech Stack
+
+* **Frontend:** Next.js
+* **Backend / Database:** Supabase
+* **Auth:** Supabase Authentication
+* **Styling:** Tailwind CSS
+* **Deployment:** Vercel
+
+This stack was chosen for fast iteration, scalability, and real-world production patterns.
+
+---
+
+## 🧱 Architecture Overview
+
+* Skills and courses are **platform-controlled data** (read-only for users)
+* Learning paths and progress are **user-generated**
+* Authentication gates dashboards and user data
+* Relational data links skills → courses → learning paths → progress
+
+---
+
+## 🧪 MVP Scope
+
+### Included
+
+* Skill discovery
+* Course comparison
+* Learning path creation
+* Progress tracking
+* User authentication
+* Dashboard
+
+### Excluded (for now)
+
+* Course hosting
+* Certifications
+* Hiring integration
+* Social features
+
+---
+
+## 📈 Future Enhancements
+
+* Personalized recommendations
+* Skill demand insights
+* Analytics dashboards
+* Community accountability
+* Employer-aligned paths
+
+---
+
+## 💡 Guiding Principles
+
+* Clarity over quantity
+* Outcomes over hype
+* Structure over motivation
+* Learning as a finite, visible journey
+
+---
+
+## 📦 Getting Started (Local Setup)
 
 ```bash
+# install dependencies
+npm install
+
+# run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Create a `.env.local` file with your Supabase credentials:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+NEXT_PUBLIC_SUPABASE_URL=your_url
+NEXT_PUBLIC_SUPABASE_ANON_KEY=your_key
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 📄 License
 
-To learn more about Next.js, take a look at the following resources:
+This project is built as a learning-focused MVP and portfolio project.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🙌 A Note
 
-## Deploy on Vercel
+SkillPath is designed to demonstrate **product thinking + full-stack development**, not just feature implementation. Every decision favors clarity, simplicity, and real user value.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
