@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Lexend } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/general/Navbar";
+import Footer from "@/components/general/Footer";
 
 const bricolage = Lexend({
   variable: "--font-bricolage",
@@ -26,6 +27,7 @@ export default function RootLayout({
       >
         <Navbar/>
         {children}
+        <Footer/>
       </body>
     </html>
   );
