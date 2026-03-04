@@ -52,7 +52,7 @@ const Navbar = () => {
 				</Link>
 				<Link
 					className='relative pb-2 after:content-[""] after:w-0 after:absolute after:bottom-0 after:left-0  after:h-1 after:bg-primary after:transition-all after:duration-500  cursor-pointer hover:after:w-full'
-					href={"/"}
+					href={"/explore"}
 				>
 					<p className="font-medium">Explore</p>
 				</Link>

@@ -1,5 +1,4 @@
 import React from "react";
-import Search from "./Search";
 const Hero = () => {
 	return (
     <section className="flex justify-center relative pb-27">
@@ -23,14 +22,16 @@ const Hero = () => {
       </div>
 			<div className="text-center mb-10 max-sm:w-90 sm:w-[70%]   md:pl-5">
 				<h1 className=" font-extrabold text-4xl md:text-5xl lg:text-7xl mb-5 lg:mb-10">
-					Choose the <span className="text-primary">right skill</span>, not just the next course.
+					A Structured Trackable Roadmap to Becoming a  <span className="text-primary">Junior Web Developer</span>
 				</h1>
 				<p className="font-medium md:text-lg text-gray-400">
-					SkillPath guides you from confusion to clarity by helping you choose
-					the right ,compare,learning paths, and stay on track toward real outcomes.
+					SkillPath helps you turn ordered progression. Skip the tutorial hell and follow a path meticulously designed for employment.
 				</p>
 			</div>
-			<Search />
+		<div className="flex gap-4">
+			<button className="bg-primary shadow-[4px_0_12px] rounded-lg shadow-primary px-6 py-3 font-bold text-sm">Start Your Roadmap &rarr;</button>
+			<button className="bg-transparent border-2 rounded-lg px-6 py-3  text-sm border-slate-500">Full Path Breakdown</button>
+		</div>
 		</section>
     </section>
 	
