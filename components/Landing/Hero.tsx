@@ -1,7 +1,7 @@
 import React from "react";
 const Hero = () => {
 	return (
-    <section className="flex justify-center relative pb-27 mt-30">
+    <section className="flex justify-center relative pb-27 mt-10 lg:mt-30">
       	<section className="  p-5 flex flex-col items-center ">
           {/* Decorative elements */}
           <div
@@ -25,7 +25,7 @@ const Hero = () => {
 					A Structured Trackable Roadmap to Becoming a  <span className="text-primary">Junior Web Developer</span>
 				</h1>
 				<p className="font-medium md:text-lg text-gray-400">
-					SkillPath helps you turn ordered progression. Skip the tutorial hell and follow a path meticulously designed for employment.
+					SkillPath helps you turn chaos into ordered progression. Skip the tutorial hell and follow a path meticulously designed for employment.
 				</p>
 			</div>
 		<div className="flex gap-4">
