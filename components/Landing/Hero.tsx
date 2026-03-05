@@ -1,8 +1,8 @@
 import React from "react";
 const Hero = () => {
 	return (
-    <section className="flex justify-center relative pb-27">
-      	<section className="mt-10  p-5 flex flex-col items-center ">
+    <section className="flex justify-center relative pb-27 mt-30">
+      	<section className="  p-5 flex flex-col items-center ">
           {/* Decorative elements */}
           <div
 						className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-20 pointer-events-none"
