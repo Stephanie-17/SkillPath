@@ -1,8 +1,8 @@
 import CTASection from "@/components/Landing/CTASection";
 import Hero from "@/components/Landing/Hero";
 import Phases from "@/components/Landing/Phases";
-import PopularPaths from "@/components/Landing/PopularPaths";
-import WhySkillPath from "@/components/Landing/whySkillPath";
+import Technology from "@/components/Landing/Technology";
+import WhySkillPath from "@/components/Landing/SkillPathSystem";
 
 
 export default function Home() {
@@ -10,6 +10,7 @@ export default function Home() {
     <main className="">
      <Hero />
      <Phases/>
+     <Technology />
      <WhySkillPath />
      <CTASection/>
     </main>
