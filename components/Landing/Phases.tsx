@@ -4,9 +4,9 @@ import { phases } from '@/data/phases'
 
 const Phases = () => {
   return (
-    <section className='mt-10'>
+    <section className='mt-30'>
        <header className='mb-8'>
-        <h2 className='font-bold text-4xl text-center mb-2'>Your 3-Phase Journey</h2>
+        <h2 className='font-bold text-4xl text-center mb-4'>Your 3-Phase Journey</h2>
         <p className='text-sm text-gray-500 text-center'>A comprehensive path from absolute beginner to production-ready developer</p>
        </header>
 
