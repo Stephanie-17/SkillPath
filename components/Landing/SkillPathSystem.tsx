@@ -11,7 +11,7 @@ const SkillPathSystem = () => {
 				
 			</header>
 
-			<section className='flex justify-around mt-18'>
+			<section className='flex flex-wrap justify-around mt-18 max-sm:gap-7'>
         {
 					skillPathSystem.map(system=>(
 						<SkillPathSystemCard key={system.id} iconPath={system.iconPath} iconAltText={system.iconAltText} id={system.id} process={system.process} desc={system.desc} />

@@ -8,7 +8,7 @@ interface PhaseCardProps {
 }
 const PhaseCard = ({ id, header, section }: PhaseCardProps) => {
 	return (
-		<article className="p-6 w-full max-w-100 bg-slate-900/50 border rounded-lg border-slate-700 hover:border-primary/50 hover:shadow-xs hover:shadow-primary transition-all duration-500">
+		<article className="p-6 w-full max-w-100 bg-slate-900/50 border-2 rounded-lg border-blue-400 hover:border-primary/50 hover:shadow-xs hover:shadow-primary transition-all duration-500">
 			<span className="bg-primary/20 text-primary px-2 py-1 font-bold text-xs rounded-full ">
 				PHASE O{id}
 			</span>
@@ -20,7 +20,7 @@ const PhaseCard = ({ id, header, section }: PhaseCardProps) => {
 					<li key={sect}>
 						<div className="flex items-center gap-3 ">
 							<FaCheckCircle className="text-primary" />
-							<p className="font-semibold text-gray-500">
+							<p className=" text-gray-400">
 								{sect}
 							</p>
 						</div>
