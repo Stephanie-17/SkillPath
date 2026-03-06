@@ -9,8 +9,8 @@ interface SkillPathSystemCard {
 }
 const SkillPathSystemCard = ({iconPath, iconAltText, id, process,desc}:SkillPathSystemCard) => {
   return (
-    <article className='flex flex-col gap-5 items-center max-w-80'>
-     <div className='bg-slate-800 border-2 border-slate-600 flex justify-center p-3 w-14 h-14 rounded-xl'>
+    <article className='group flex flex-col gap-5 items-center max-w-80'>
+     <div className='bg-slate-800 border-2 border-blue-300 flex justify-center p-3 w-14 h-14 rounded-xl group-hover:bg-primary transition-discrete duration-500'>
        <Image src={iconPath} width={34} height={24} alt={iconAltText} />
      </div>
 
