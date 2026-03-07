@@ -1,11 +1,16 @@
 import type { Metadata } from "next";
-import { Lexend } from "next/font/google";
+import { Lexend, IBM_Plex_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/general/Navbar";
 import Footer from "@/components/general/Footer";
 
 const bricolage = Lexend({
   variable: "--font-bricolage",
+  subsets: ["latin"],
+});
+
+export const ibmPlexSans = IBM_Plex_Sans({
+  variable: "--font-ibm-plex-sans",
   subsets: ["latin"],
 });
 
@@ -23,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bricolage.variable} antialiased font-sans `}
+        className={`${bricolage.variable} ${ibmPlexSans.variable} antialiased font-primary `}
       >
         <Navbar/>
         {children}

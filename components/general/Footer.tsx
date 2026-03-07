@@ -22,9 +22,9 @@ const Footer = () => {
 				</Link>
 				<Link
 					className='relative pb-2 transition-colors duration-500   cursor-pointer text-gray-600 hover:text-primary '
-					href={"/explore"}
+					href={"/roadmap"}
 				>
-					<p className="font-medium">Explore</p></Link>
+					<p className="font-medium">Roadmap</p></Link>
       </div>
       </section>
        <hr className='text-gray-800' />

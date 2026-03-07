@@ -35,9 +35,9 @@ const Navbar = () => {
 					</Link>
 					<Link
 						className="block hover:bg-primary hover:text-white transition-colors duration-500 pl-2 py-2 cursor-pointer"
-						href={"/"}
+						href={"/roadmap"}
 					>
-						<p className="font-medium">Explore</p>
+						<p className="font-medium">Roadmap</p>
 					</Link>
 				</div>
 			</div>
@@ -52,9 +52,9 @@ const Navbar = () => {
 				</Link>
 				<Link
 					className='relative pb-2 after:content-[""] after:w-0 after:absolute after:bottom-0 after:left-0  after:h-1 after:bg-primary after:transition-all after:duration-500  cursor-pointer hover:after:w-full'
-					href={"/explore"}
+					href={"/roadmap"}
 				>
-					<p className="font-medium">Explore</p>
+					<p className="font-medium">Roadmap</p>
 				</Link>
 			</div>
 		</nav>

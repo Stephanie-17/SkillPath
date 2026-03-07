@@ -19,6 +19,7 @@
   --color-accent:var(--accent); */
  
   --font-sans: var(--font-bricolage);
+    --font-primary: var(--font-ibm-plex-sans);
 }
 
 @media (prefers-color-scheme: dark) {
