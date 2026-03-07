@@ -2,7 +2,7 @@ import React from 'react'
 
 const Technology = () => {
   return (
-    <section className='bg-slate-900 px-10 py-10 mt-30 mb-15 border-y-slate-500 border-y-3'>
+    <section className='bg-slate-900 px-10 py-10 mt-30 mb-15 border-y-primary border-y-3'>
       <header className=' mb-10'>
         <h3 className='text-slate-300  tracking-wide text-center text-2xl'>Technologies You Will Master</h3>
       </header>

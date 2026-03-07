@@ -1,17 +1,20 @@
 import React from "react";
 const Hero = () => {
 	return (
-    <section className="flex justify-center relative pb-27 mt-10 lg:mt-30">
+    <section className="flex justify-center relative pb-27 mt-10 lg:mt-30 ">
       	<section className="  p-5 flex flex-col items-center ">
           {/* Decorative elements */}
           <div
-						className="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full -z-10 opacity-20 pointer-events-none"
+						className="absolute top-0 left-1/2 -translate-x-1/2 w-[80%] h-full -z-10 opacity-50 pointer-events-none "
 					>
 						<div
-							className="absolute top-0 right-0 w-125 h-125 bg-primary/30 rounded-full blur-[120px]"
+							className="absolute top-0 right-0 w-65 h-125 bg-blue-600/50 rounded-full blur-[120px]"
+						></div>
+							<div
+							className="absolute -top-5 leftt-0 w-65 h-125 bg-blue-600/50 rounded-full blur-[120px]"
 						></div>
 						<div
-							className="absolute bottom-0 left-0 w-100 h-100 bg-blue-600/20 rounded-full blur-[100px]"
+							className="absolute bottom-0 left-0 w-60 h-100 bg-blue-600/50 rounded-full blur-[100px]"
 						></div>
 					</div>
 
