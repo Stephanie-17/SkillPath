@@ -28,7 +28,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bricolage.variable} ${ibmPlexSans.variable} antialiased font-primary `}
+        className={`${bricolage.variable} ${ibmPlexSans.variable} antialiased font-primary transition-all duration-500 `}
       >
         <Navbar/>
         {children}

@@ -5,6 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 const Navbar = () => {
 	const [menu, setMenu] = useState(false);
+
+	const handleClick = () => {
+		setMenu(false)
+	}
 	return (
 		<nav className="pt-4 px-2 lg:px-10 relative flex items-center  justify-between border-b-2 border-gray-800 pb-2">
 			{/* Logo */}
@@ -18,9 +22,13 @@ const Navbar = () => {
 
 			<FaBars onClick={() => setMenu(true)} className="text-3xl md:hidden " />
 
+        {
+					menu && <div className="bg-black/50 backdrop-blur-lg fixed bottom-0 right-0 left-0 top-0 z-11"></div>
+				}
+
 			{/* Sidebar */}
 			<div
-				className={`${!menu && "hidden"} md:hidden absolute right-0 top-0 bottom-0 bg-black/30 backdrop-blur-2xl border-2 border-white/20 shadow-xl h-dvh  w-53 z-2 `}
+				className={`${!menu && "translate-x-100"} translate-0 transition-all duration-500 z-12 md:hidden fixed right-0 top-0 -bottom-5 bg-black/50 backdrop-blur-2xl border border-white/20 shadow-xl h-dvh  w-53  `}
 			>
 				<FaTimes
 					className="absolute cursor-pointer right-2 top-2 text-3xl text-secondary-dark"
@@ -28,16 +36,16 @@ const Navbar = () => {
 				/>
 				<div className="mt-18 ">
 					<Link
-						className="block hover:bg-primary hover:text-white transition-colors duration-500 pl-2 py-2 cursor-pointer"
+						className="block text-white hover:bg-primary transition-colors duration-500 pl-2 py-2 cursor-pointer"
 						href={"/"}
 					>
-						<p className="font-medium">Home</p>
+						<p className="font-medium" onClick={handleClick}>Home</p>
 					</Link>
 					<Link
-						className="block hover:bg-primary hover:text-white transition-colors duration-500 pl-2 py-2 cursor-pointer"
+						className="block text-white hover:bg-primary transition-colors duration-500 pl-2 py-2 cursor-pointer"
 						href={"/roadmap"}
 					>
-						<p className="font-medium">Roadmap</p>
+						<p className="font-medium" onClick={handleClick}>Roadmap</p>
 					</Link>
 				</div>
 			</div>
