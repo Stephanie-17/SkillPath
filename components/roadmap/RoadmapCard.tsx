@@ -51,11 +51,14 @@ const RoadmapCard = ({phase, timeline, header, desc,coreSkills, outcome}: Roadma
             <h3 className="font-semibold text-xl ">Core Skills</h3>
           </div>
 
-          <ul className="flex flex-wrap gap-3 mt-5">
-            <li className="px-3 py-2  bg-primary/40 text-blue-200 font-semibold text-sm border-2 border-blue-600 rounded-xl">HTML</li>
-            <li className="px-3 py-2  bg-primary/40 text-blue-200 font-semibold text-sm border-2 border-blue-600 rounded-xl">Javascript (core)</li>
-              <li className="px-3 py-2  bg-primary/40 text-blue-200 font-semibold text-sm border-2 border-blue-600 rounded-xl">Responsive design</li>
-                <li className="px-3 py-2  bg-primary/40 text-blue-200 font-semibold text-sm border-2 border-blue-600 rounded-xl">Git & Github</li>
+          <ul className="flex flex-wrap gap-3 mt-5"> 
+
+						{
+							coreSkills.map(skills => (
+								 <li key={skills} className="px-3 py-2  bg-primary/40 text-blue-200 font-semibold text-sm border-2 border-blue-600 rounded-xl">{skills}</li>
+							))
+						}
+           
           </ul>
           </div>
           
