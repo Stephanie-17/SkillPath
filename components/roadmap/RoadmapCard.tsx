@@ -1,6 +1,16 @@
 import React from "react";
 import { MdCode, MdTableChart, MdTimer } from "react-icons/md";
-const RoadmapCard = () => {
+
+interface RoadmapCardProps {
+	phase: number,
+	timeline: string,
+	header: string,
+	desc: string,
+	coreSkills: string[],
+	outcome: string
+}
+
+const RoadmapCard = ({phase, timeline, header, desc,coreSkills, outcome}: RoadmapCardProps) => {
 	return (
 		<article className="grid grid-cols-[40px_1fr] gap-4 pb-5">
 			{/* decorative line */}
@@ -18,20 +28,20 @@ const RoadmapCard = () => {
 			{/* roadmap */}
 			<div className="bg-primary/25 rounded-lg p-5">
 				<p className="text-xs tracking-widest font-bold text-primary mb-3">
-					PHASE 1
+					PHASE {phase}
 				</p>
 
         <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center">
-          <h3 className="text-bold text-2xl max-sm:mb-3 font-bold">Foundations</h3>
+          <h3 className="text-bold text-2xl max-sm:mb-3 font-bold">{header}</h3>
 
-				<div className="bg-primary/20 p-2 w-24 flex justify-between rounded-2xl">
+				<div className="bg-primary/20 p-2 w-26  flex justify-around rounded-2xl">
 					<MdTimer className="text-gray-400" />
-					<p className="text-xs font-semibold text-gray-400">4-6 Weeks</p>
+					<p className="text-xs font-semibold text-gray-400">{timeline}</p>
 				</div>
         </div>
 				
 
-        <p className="text-gray-200 font-medium mt-5 tracking-wide">The bedrock of the web. Learn how to structure documents, style them beautifully, and add basic interactivity using the core languages of the internet.</p>
+        <p className="text-gray-200 font-medium mt-5 tracking-wide">{desc}</p>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 lg:justify-between lg:items-center">
           
@@ -52,7 +62,7 @@ const RoadmapCard = () => {
 
           <div className="bg-slate-800 mt-9 p-5 rounded-lg">
            <h3 className="text-primary font-semibold mb-3 text-lg">OUTCOME</h3>
-           <p>You&apos;ll be able to build pixel-perfect, mobile-friendly landing pages and simple interactive apps like calculators or to-do lists</p>
+           <p>{outcome}</p>
           </div>
          
         </div>
