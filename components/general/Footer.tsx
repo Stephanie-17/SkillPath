@@ -25,6 +25,12 @@ const Footer = () => {
 					href={"/roadmap"}
 				>
 					<p className="font-medium">Roadmap</p></Link>
+
+          	<Link
+					className='relative pb-2 transition-colors duration-500   cursor-pointer text-gray-600 hover:text-primary '
+					href={"/dashboard"}
+				>
+					<p className="font-medium">Dashboard</p></Link>
       </div>
       </section>
        <hr className='text-gray-800' />

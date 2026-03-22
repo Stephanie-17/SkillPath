@@ -13,11 +13,11 @@ const Navbar = () => {
 		<nav className="pt-4 px-2 lg:px-10 relative flex items-center  justify-between border-b-2 border-gray-800 pb-2">
 			{/* Logo */}
 			<div> 
-				<Image className=" rounded-full" src={'/logo.png'} alt="SkillPath icon" height={70} width={70} />
-				{/* <h1 className="font-bold text-3xl">
-					<span className="text-secondary-dark">Skill</span>
-					<span className="text-secondary-light">Path</span>
-				</h1> */}
+				{/* <Image className=" rounded-full" src={'/logo.png'} alt="SkillPath icon" height={70} width={70} /> */}
+				<h1 className="font-bold text-3xl">
+					<span className="text-primary">Skill</span>
+					<span className="text-white">Path</span>
+				</h1>
 			</div>
 
 			<FaBars onClick={() => setMenu(true)} className="text-3xl md:hidden " />
@@ -47,6 +47,13 @@ const Navbar = () => {
 					>
 						<p className="font-medium" onClick={handleClick}>Roadmap</p>
 					</Link>
+
+						<Link
+						className="block text-white hover:bg-primary transition-colors duration-500 pl-2 py-2 cursor-pointer"
+						href={"/dashboard"}
+					>
+						<p className="font-medium" onClick={handleClick}>Dashboard</p>
+					</Link>
 				</div>
 			</div>
 
@@ -63,6 +70,13 @@ const Navbar = () => {
 					href={"/roadmap"}
 				>
 					<p className="font-medium">Roadmap</p>
+				</Link>
+
+					<Link
+					className='relative pb-2 after:content-[""] after:w-0 after:absolute after:bottom-0 after:left-0  after:h-1 after:bg-primary after:transition-all after:duration-500  cursor-pointer hover:after:w-full'
+					href={"/dashboard"}
+				>
+					<p className="font-medium">Dashboard</p>
 				</Link>
 			</div>
 		</nav>
