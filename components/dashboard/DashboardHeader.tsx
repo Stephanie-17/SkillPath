@@ -1,5 +1,11 @@
 import React from "react";
-import { MdCheckCircle, MdLayers, MdTerminal, MdTimer } from "react-icons/md";
+import {
+	MdCheckCircle,
+	MdLayers,
+	MdPlayArrow,
+	MdTerminal,
+	MdTimer,
+} from "react-icons/md";
 
 const DashboardHeader = () => {
 	return (
@@ -17,17 +23,30 @@ const DashboardHeader = () => {
 						from absolute foundations to building full-stack applications with
 						industry-standard tools.
 					</p>
-          <div className="flex gap-4 flex-wrap">
-            <span className="bg-primary/35 py-2 px-3 text-white rounded-full text-xs flex gap-2 items-center font-semibold"><MdTimer /> 6-9 Months</span>
-            <span className="bg-primary/35 py-2 px-3 text-white rounded-full text-xs flex gap-2 items-center font-semibold"><MdLayers/> 3 major milestones</span>
-            <span className="bg-primary/35 py-2 px-3 text-white rounded-full text-xs flex gap-2 items-center font-semibold"><MdTerminal/> 12 Projects</span>
-          </div>
+					<div className="flex gap-4 flex-wrap">
+						<span className="bg-primary/35 py-2 px-3 text-white rounded-full text-xs flex gap-2 items-center font-semibold">
+							<MdTimer /> 6-9 Months
+						</span>
+						<span className="bg-primary/35 py-2 px-3 text-white rounded-full text-xs flex gap-2 items-center font-semibold">
+							<MdLayers /> 3 major milestones
+						</span>
+						<span className="bg-primary/35 py-2 px-3 text-white rounded-full text-xs flex gap-2 items-center font-semibold">
+							<MdTerminal /> 12 Projects
+						</span>
+					</div>
 				</div>
 
-        <div>
-          <p className="font-semibold mb-3 text-sm">Web Developer score: 72%</p>
-          <button className="bg-primary py-3 px-5 rounded-xl font-bold">Resume Learning</button>
-        </div>
+				<div className="max-w-54">
+					<p className="font-semibold mb-1 text-sm ">
+						Web Developer score: 72%
+					</p>
+					<div className="w-full h-2 bg-[#324d67] rounded-full overflow-hidden mb-3">
+						<div className="h-full bg-primary w-[72%]"></div>
+					</div>
+					<button className="bg-primary py-3 px-5 rounded-xl font-bold cursor-pointer flex  items-center gap-3">
+						Resume Learning <MdPlayArrow className="text-xl" />
+					</button>
+				</div>
 			</div>
 		</header>
 	);

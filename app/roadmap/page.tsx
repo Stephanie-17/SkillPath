@@ -7,7 +7,7 @@ import { MdRocketLaunch } from 'react-icons/md'
 const Roadmap = () => {
   return (
     
-    <main className='flex justify-center flex-col'>
+    <main className='flex justify-center items-center flex-col'>
       <div className='p-5 sm:p-10 max-w-6xl'>
          <header className='mb-10'>
         <h1 className='text-4xl sm:text-4xl md:text-5xl font-bold mb-4'>Full Path <span className='text-primary'>Breakdown</span></h1>

@@ -2,7 +2,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import Link from "next/link";
-import Image from "next/image";
+// import Image from "next/image";
 const Navbar = () => {
 	const [menu, setMenu] = useState(false);
 
